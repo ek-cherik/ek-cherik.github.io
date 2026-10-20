@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Екатерина — Frontend Developer</title>
+    <meta name="description"
+        content="Екатерина — начинающий frontend-разработчик. HTML, CSS, JavaScript, React. Ищу стажировку.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#hero" class="logo" aria-label="На главную">ЕК</a>
+            <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false"
+                aria-controls="nav-list">☰</button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Переключить тему">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section hero-section" id="hero">
+            <div class="container hero">
+                <div class="hero-text">
+                    <p class="eyebrow">Привет, меня зовут</p>
+                    <h1>Екатерина</h1>
+                    <p class="hero-role">Frontend Developer · стажёр</p>
+                    <p class="hero-desc">Изучаю HTML, CSS, JavaScript и React, делаю учебные проекты и ищу стажировку,
+                        где смогу расти в команде.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">Проекты</a>
+                        <a class="btn btn-ghost" href="#contacts">Написать</a>
+                        <a class="btn btn-ghost" href="resume.pdf" download>Резюме (PDF)</a>
+                    </div>
+                </div>
+                <div class="photo-frame">
+                    <img src="assets/photo.jpg" alt="Фото Екатерины Кузнецовой" onerror="this.remove()">
+                    <span class="photo-fallback">ЕК</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Начинающий frontend-разработчик. Изучаю HTML, CSS, JavaScript и React, собираю учебные проекты. По
+                    образованию — специалист по информационной безопасности. Ранее работала ассистентом в
+                    благотворительном фонде: вела документацию, организовывала мероприятия, участвовала в переговорах и
+                    создании выставки, работала с видео-, аудио- и графическими редакторами. Этот опыт научил
+                    внимательности к деталям, организованности и умению доводить задачи до конца. Сейчас ищу стажировку
+                    или junior-позицию, чтобы расти в команде разработки.</p>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <h2>Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Основное</h3>
+                        <ul class="chips">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Инструменты</h3>
+                        <ul class="chips">
+                            <li>Vite</li>
+                            <li>React Router</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Дополнительно</h3>
+                        <ul class="chips">
+                            <li>Видеоредакторы</li>
+                            <li>Аудиоредакторы</li>
+                            <li>Графические редакторы</li>
+                            <li>Документация</li>
+                            <li>Английский A2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <h2>Опыт</h2>
+                <div class="projects-grid">
+                    <article class="card">
+                        <h3>Благотворительный фонд</h3>
+                        <p><strong>Ассистент</strong> · 2023 — 2025</p>
+                        <ul>
+                            <li>Ведение документации и документооборота</li>
+                            <li>Организация мероприятий фонда</li>
+                            <li>Участие в переговорах</li>
+                            <li>Участие в конференции и создание выставки</li>
+                            <li>Подготовка материалов в видео-, аудио- и графических редакторах</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="education">
+            <div class="container">
+                <h2>Образование</h2>
+                <div class="projects-grid">
+                    <article class="card">
+                        <h3>Московский университет МВД России имени В. Я. Кикотя</h3>
+                        <p>Специальность: «Информационная безопасность»</p>
+                        <p>2016–2021</p>
+                    </article>
+                    <article class="card">
+                        <h3>Курсы и повышение квалификации</h3>
+                        <p><strong>FreeCodeCamp</strong> — Web-дизайн, 2026</p>
+                        <p><strong>РЭУ им. Г. В. Плеханова</strong> — повышение квалификации, курс
+                            «Frontend-разработка», 2026</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <h2>Проекты</h2>
+                <div class="projects-grid">
+                    <article class="card">
+                        <div class="card-top">
+                            <h3>velo-routes</h3>
+                            <span class="badge">учебный проект</span>
+                        </div>
+                        <p>Учебное SPA для демонстрации навыков работы с React, Vite, React Router и адаптивной
+                            вёрсткой.</p>
+                        <ul class="chips">
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>React Router</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                        <div class="card-links">
+                            <a class="btn btn-small btn-primary" href="https://ek-cherik.github.io/velo-routes/"
+                                target="_blank" rel="noopener">Репозиторий</a>
+                        </div>
+                    </article>
+                    <article class="card card-soon">
+                        <h3>Следующий проект</h3>
+                        <p>В работе. Здесь появится описание и ссылка.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <ul class="contacts">
+                    <li><span class="contact-label">Email</span><a
+                            href="mailto:ek594436@gmail.com">ek594436@gmail.com</a></li>
+                    <li><span class="contact-label">GitHub</span><a href="https://github.com/ek-cherik" target="_blank"
+                            rel="noopener">github.com/ek-cherik</a></li>
+                    <li><span class="contact-label">Telegram</span>@katrin1481</li>
+                    <li><span class="contact-label">Город</span><span>Москва · гибрид / офис / удалёнка</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Екатерина</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
